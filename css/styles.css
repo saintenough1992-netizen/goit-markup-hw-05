@@ -283,7 +283,6 @@ img {
   border-radius: 50%;
   background-color: #4d5ae5;
   position: relative;
-  margin-top: 8px;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -381,6 +380,9 @@ img {
   gap: 16px;
   margin-top: 16px;
 }
+.social-media p {
+  color: #fff;
+}
 .social-media .team-icon {
   transition-property: fill;
   transition-duration: 250ms;
@@ -411,7 +413,7 @@ img {
   color: #fff;
 }
 .newsletter-form input {
-  margin-top: 22px;
+  margin-top: 16px;
   width: 264px;
   border: 1px solid #fff;
   border-radius: 4px;
