@@ -365,16 +365,19 @@ img {
 .footer-main .container {
   display: flex;
   align-items: baseline;
-  gap: 120px;
 }
 .logo-content {
   max-width: 264px;
+  margin-right: 120px;
 }
 .logo-content .logo {
   margin-bottom: 16px;
 }
 .footer-main a {
   color: #f4f4fd;
+}
+.social-media {
+  margin-right: 80px;
 }
 .social-media .team-icon-container {
   gap: 16px;
@@ -413,7 +416,7 @@ img {
   color: #fff;
 }
 .newsletter-form input {
-  margin-top: 16px;
+  margin-top: 14px;
   width: 264px;
   border: 1px solid #fff;
   border-radius: 4px;
