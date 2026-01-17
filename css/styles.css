@@ -1,4 +1,4 @@
-/* General Settings */
+/*                    General Settings                 */
 body {
   box-sizing: border-box;
   margin: 0;
@@ -71,7 +71,7 @@ img {
   margin: 0 auto;
   padding: 0 15px;
 }
-/* HEADER SECTION STYLING */
+/*                    HEADER SECTION STYLING                       */
 .header-main {
   border-bottom: 1px solid #e7e9fc;
   box-shadow:
@@ -170,7 +170,7 @@ img {
 .header-address a:focus {
   color: #404bbf;
 }
-/* BANNER SECTION STYLING */
+/*                           BANNER SECTION STYLING                       */
 .banner-main {
   background-color: #2e2f42;
   background:
@@ -213,7 +213,7 @@ img {
 .banner-main button:focus {
   background-color: #404bbf;
 }
-/* FEATURES SECTION STYLING */
+/*                        FEATURES SECTION STYLING                        */
 .features ul {
   display: flex;
   flex-wrap: nowrap;
@@ -241,7 +241,7 @@ img {
 .features p {
   margin-top: 8px;
 }
-/* TEAM SECTION STYLING */
+/*                             TEAM SECTION STYLING                                */
 .our-team {
   background-color: #f4f4fd;
 }
@@ -299,7 +299,7 @@ img {
   translate: -50% -50%;
   fill: #f4f4fd;
 }
-/* PORTFOLIO SECTION STYLING */
+/*                      PORTFOLIO SECTION STYLING                       */
 .our-portfolio img {
   width: 360px;
   height: 300px;
@@ -355,7 +355,7 @@ img {
 .portfolio-list h3 {
   margin-bottom: 8px;
 }
-/* FOOTER SECTION STYLING */
+/*                              FOOTER SECTION STYLING                          */
 .footer-main {
   background-color: #2e2f42;
   color: #f4f4fd;
@@ -470,6 +470,21 @@ img {
   height: 20px;
   display: block;
 }
+/*                              MODAL WINDOW                              */
+.form-contact input,
+.ta-comment-contact {
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.close-button::before,
+.close-button::after,
+.submit-contact,
+.close-button {
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -481,11 +496,19 @@ img {
   justify-content: center;
   align-items: center;
   z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.is-open {
+  opacity: 1;
+  pointer-events: auto;
 }
 .modal {
   width: 408px;
   height: 584px;
-  color: #fff;
 }
 .form-contact {
   font-family: Roboto, sans-serif;
@@ -520,24 +543,18 @@ img {
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
   position: relative;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close-button::before,
 .close-button::after {
   content: "";
   display: block;
-  height: 2px;
+  height: 1px;
   width: 10px;
   background-color: rgba(46, 47, 66, 1);
   position: absolute;
   top: 50%;
   left: 50%;
   translate: -50% -50%;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close-button::before {
   transform: rotate(45deg);
@@ -560,9 +577,11 @@ img {
   font-weight: 500;
   color: #2e2f42;
   margin-top: 24px;
+  letter-spacing: 0.3px;
 }
 .form-contact label {
   margin-bottom: 4px;
+  letter-spacing: 0.5px;
 }
 .form-contact input {
   display: block;
@@ -573,9 +592,6 @@ img {
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   padding: 11px 38px;
-  transition-property: border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-contact input:focus {
   outline: none;
@@ -585,17 +601,18 @@ img {
   resize: none;
   outline: none;
   width: 360px;
+  height: 120px;
   border-radius: 4px;
   margin-top: 4px;
   padding: 8px 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
+  font-size: 12px;
+}
+.ta-comment-contact::placeholder {
+  letter-spacing: 0.5px;
 }
 .textarea-comment-label {
   margin-top: 8px;
-}
-.terms-label {
-  font-size: 12px;
-  line-height: 1.17;
 }
 .form-icon {
   position: absolute;
@@ -618,6 +635,8 @@ img {
 .terms-link {
   text-decoration: underline;
   color: rgba(77, 90, 229, 1);
+  line-height: 1.3333;
+  letter-spacing: 0.5px;
 }
 .submit-contact {
   width: 169px;
@@ -635,20 +654,18 @@ img {
   line-height: 1.5;
   letter-spacing: 0.6px;
   cursor: pointer;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .submit-contact:hover,
 .submit-contact:active {
   background-color: #404bbf;
 }
+.form-icon-container {
+  fill: #2e2f42;
+}
 .form-icon-container:focus-within {
   fill: #4d5ae5;
 }
-.form-icon-container:focus-within input {
-  border: 1px solid #4d5ae5;
-}
+.form-icon-container:focus-within input,
 .ta-comment-contact:focus-within {
   border: 1px solid #4d5ae5;
 }
