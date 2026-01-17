@@ -607,6 +607,7 @@ img {
   padding: 8px 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   font-size: 12px;
+  margin-bottom: 16px;
 }
 .ta-comment-contact::placeholder {
   letter-spacing: 0.5px;
@@ -630,13 +631,55 @@ img {
   height: 16px;
   width: 16px;
   margin-right: 8px;
+  display: none;
+}
+.terms-label {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.ta-text {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+.custom-checkbox {
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  border: 1px solid #2e2f4266;
+  margin-right: 8px;
+  fill: #f4f4fd;
+  position: relative;
+  cursor: pointer;
+}
+.terms-contact {
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.custom-checkbox svg {
+  position: absolute;
+  top: 0;
+  left: 1px;
+  transform: translate(-50% -50%);
   opacity: 0;
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .terms-link {
+  display: inline-block;
   text-decoration: underline;
   color: rgba(77, 90, 229, 1);
   line-height: 1.3333;
   letter-spacing: 0.5px;
+}
+.terms-contact:checked + .custom-checkbox > svg {
+  opacity: 1;
+}
+.terms-contact:checked + .custom-checkbox {
+  background-color: #404bbf;
 }
 .submit-contact {
   width: 169px;
