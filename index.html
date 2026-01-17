@@ -453,37 +453,62 @@
       <div class="modal">
         <form action="" class="form-contact">
           <button type="button" class="close-button"></button>
-          <label for="" class="form-contact-main"
+          <label class="form-contact-main"
             >Leave your contacts and we will call you back</label
           >
-          <label class="input-name-label"
-            >Name<input
-              type="text"
-              class="input-name-contact"
-              name="name-contact"
-            />
-          </label>
-          <label class="input-phone-label"
-            >Phone<input
-              type="tel"
-              class="input-phone-contact"
-              name="phone-contact"
-            />
-          </label>
-          <label class="input-email-label"
-            >Email<input
-              type="text"
-              class="input-email-contact"
-              name="email-contact"
-            />
-          </label>
-          <label class="textarea-comment-label">
+          <div class="form-icon-container">
+            <svg width="12" height="12" class="form-icon user-icon">
+              <use href="./images/icons.svg#user"></use>
+            </svg>
+
+            <label for="name-contact" class="input-label"
+              >Name
+
+              <input
+                type="text"
+                class="input-name-contact"
+                name="name-contact"
+                id="name-contact"
+              />
+            </label>
+          </div>
+          <div class="form-icon-container">
+            <svg width="13" height="13" class="form-icon phone-icon">
+              <use href="./images/icons.svg#phone"></use>
+            </svg>
+            <label for="phone-contact" class="input-label"
+              >Phone
+
+              <input
+                type="tel"
+                class="input-phone-contact"
+                name="phone-contact"
+                id="phone-contact"
+              />
+            </label>
+          </div>
+          <div class="form-icon-container">
+            <svg width="18" height="24" class="form-icon">
+              <use href="./images/icons.svg#email"></use>
+            </svg>
+            <label for="email-contact" class="input-label"
+              >Email
+              <input
+                type="text"
+                class="input-email-contact"
+                name="email-contact"
+                id="email-contact"
+              />
+            </label>
+          </div>
+          <label for="comment-contact" class="textarea-comment-label">
             Comment
             <textarea
               class="ta-comment-contact"
               name="comment-contact"
               rows="8"
               placeholder="Text input"
+              id="comment-contact"
             ></textarea>
           </label>
 
