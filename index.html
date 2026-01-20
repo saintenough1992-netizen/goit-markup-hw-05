@@ -433,9 +433,12 @@
           </ul>
         </div>
         <div class="newsletter-subscription">
-          <form action="" name="newsletter-footer" class="newsletter-form">
-            <label name="newsletter-email">
-              Subscribe
+          <p>Subscribe</p>
+          <form
+            action="submit"
+            name="newsletter-footer"
+            class="newsletter-form">
+            <label>
               <input
                 type="email"
                 name="newsletter-email-input"
@@ -444,23 +447,28 @@
             <button class="newsletter-submit" type="submit">
               Subscribe
               <span
-                ><svg><use href="./images/icons.svg#icon-send"></use></svg
+                ><svg height="20" width="24">
+                  <use href="./images/icons.svg#icon-send"></use></svg
               ></span>
             </button>
           </form>
         </div>
       </div>
     </footer>
-    <div class="modal-overlay">
+    <div class="modal-overlay is-open">
       <div class="modal">
-        <form action="" class="form-contact">
-          <button type="button" class="close-button"></button>
+        <form action="submit" class="form-contact">
+          <button type="button" class="close-button">
+            <svg width="8" height="8" class="form-icon user-icon">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
           <label class="form-contact-main"
             >Leave your contacts and we will call you back</label
           >
           <div class="form-icon-container">
-            <svg width="12" height="12" class="form-icon user-icon">
-              <use href="./images/icons.svg#user"></use>
+            <svg width="18" height="24" class="form-icon user-icon">
+              <use href="./images/icons.svg#person"></use>
             </svg>
 
             <label for="name-contact" class="input-label"
@@ -474,7 +482,7 @@
             </label>
           </div>
           <div class="form-icon-container">
-            <svg width="13" height="13" class="form-icon phone-icon">
+            <svg width="18" height="24" class="form-icon phone-icon">
               <use href="./images/icons.svg#phone"></use>
             </svg>
             <label for="phone-contact" class="input-label"
@@ -494,7 +502,7 @@
             <label for="email-contact" class="input-label"
               >Email
               <input
-                type="text"
+                type="email"
                 class="input-email-contact"
                 name="email-contact"
                 id="email-contact" />
@@ -510,9 +518,9 @@
           </label>
 
           <label class="terms-label">
-            <input type="checkbox" class="terms-contact" />
+            <input type="checkbox" name="ta-checkbox" class="terms-contact" />
             <span class="custom-checkbox">
-              <svg width="13" height="13" class="form-icon">
+              <svg width="10" height="8" class="form-icon">
                 <use href="./images/icons.svg#check"></use></svg></span
             ><span class="ta-text"
               >I accept terms and conditions of the
