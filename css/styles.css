@@ -472,7 +472,7 @@ img {
 }
 .newsletter-submit svg {
   width: 24px;
-  height: 20px;
+  height: 24px;
   display: block;
   fill: #fff;
 }
@@ -560,9 +560,13 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.close-button:hover {
+.close-button:hover,
+.close-button:focus {
   background-color: rgba(64, 75, 191, 1);
   cursor: pointer;
+}
+.close-button:hover svg,
+.close-button:focus svg {
   fill: #fff;
 }
 .form-contact .form-contact-main {
@@ -620,17 +624,7 @@ img {
   height: 24px;
   width: 18px;
 }
-.terms-label > input[type="checkbox"] {
-  display: inline-block;
-  height: 16px;
-  width: 16px;
-  margin-right: 8px;
-  opacity: 0;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  position: absolute;
-}
+
 .terms-label {
   display: flex;
   align-items: center;
@@ -693,6 +687,7 @@ img {
   cursor: pointer;
 }
 .submit-contact:hover,
+.submit-contact:focus,
 .submit-contact:active {
   background-color: #404bbf;
 }
