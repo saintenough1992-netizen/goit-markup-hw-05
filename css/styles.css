@@ -657,10 +657,8 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .terms-link {
-  display: inline-block;
   text-decoration: underline;
   color: rgba(77, 90, 229, 1);
-  line-height: 1.3333;
   letter-spacing: 0.5px;
 }
 .terms-contact:checked + .custom-checkbox > svg {
