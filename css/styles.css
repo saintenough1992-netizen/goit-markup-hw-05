@@ -426,8 +426,10 @@ img {
   border: 1px solid #fff;
   border-radius: 4px;
   background-color: #2e2f42;
-  padding: 7px 16px;
+  padding-left: 16px;
   font-size: 12px;
+  height: 40px;
+  letter-spacing: 0.04em;
   line-height: 2;
   color: #fff;
   transition-property: border-color;
