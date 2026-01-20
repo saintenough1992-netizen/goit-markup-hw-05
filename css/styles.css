@@ -1,4 +1,4 @@
-/*                    General Settings                 */
+/*       -----------------             General Settings          -------------------       */
 body {
   box-sizing: border-box;
   margin: 0;
@@ -71,7 +71,7 @@ img {
   margin: 0 auto;
   padding: 0 15px;
 }
-/*                    HEADER SECTION STYLING                       */
+/*           --------------------------         HEADER SECTION STYLING           --------------------            */
 .header-main {
   border-bottom: 1px solid #e7e9fc;
   box-shadow:
@@ -93,10 +93,6 @@ img {
 .header-nav {
   display: flex;
   gap: 40px;
-}
-.header-main a {
-  display: block;
-  padding: 24px 0;
 }
 .header-nav a:hover,
 .header-nav a:focus,
@@ -159,7 +155,6 @@ img {
   font-style: normal;
 }
 .header-address ul {
-  font-style: normal;
   display: flex;
   justify-content: space-between;
   gap: 40px;
@@ -167,13 +162,12 @@ img {
 .header-address a {
   color: #434455;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  font-style: normal;
 }
 .header-address a:hover,
 .header-address a:focus {
   color: #404bbf;
 }
-/*                           BANNER SECTION STYLING                       */
+/*               -------------------------            BANNER SECTION STYLING        -----------------               */
 .banner-main {
   background-color: #2e2f42;
   background:
@@ -216,7 +210,7 @@ img {
 .banner-main button:focus {
   background-color: #404bbf;
 }
-/*                        FEATURES SECTION STYLING                        */
+/*      ------------------                  FEATURES SECTION STYLING          -----------------              */
 .features ul {
   display: flex;
   flex-wrap: nowrap;
@@ -231,8 +225,6 @@ img {
   border: 1px solid #8e8f99;
   border-radius: 4px;
   height: 112px;
-  width: 264px;
-  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -243,7 +235,7 @@ img {
 .features p {
   margin-top: 8px;
 }
-/*                             TEAM SECTION STYLING                                */
+/*            --------------------                 TEAM SECTION STYLING             ---------------                   */
 .our-team {
   background-color: #f4f4fd;
 }
@@ -301,7 +293,7 @@ img {
   translate: -50% -50%;
   fill: #f4f4fd;
 }
-/*                      PORTFOLIO SECTION STYLING                       */
+/*          -----------------            PORTFOLIO SECTION STYLING          ------------------            */
 .our-portfolio img {
   width: 360px;
   height: 300px;
@@ -357,7 +349,7 @@ img {
 .portfolio-list h3 {
   margin-bottom: 8px;
 }
-/*                              FOOTER SECTION STYLING                          */
+/*            ----------------                  FOOTER SECTION STYLING            --------------              */
 .footer-main {
   background-color: #2e2f42;
   color: #f4f4fd;
@@ -384,9 +376,6 @@ img {
 .social-media .team-icon-container {
   gap: 16px;
   margin-top: 16px;
-}
-.social-media p {
-  color: #fff;
 }
 .social-media .team-icon {
   transition-property: fill;
@@ -419,10 +408,7 @@ img {
   align-items: flex-end;
   column-gap: 24px;
 }
-.newsletter-form label {
-  display: flex;
-  flex-direction: column;
-}
+
 .newsletter-form input {
   width: 264px;
   border: 1px solid #fff;
